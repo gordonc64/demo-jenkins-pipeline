@@ -49,7 +49,7 @@ pipeline {
     }
 
   }
-  tools {
-    gradle 'gradle6.5'
-  }
+  //tools {
+  //  gradle 'gradle6.5'
+  //}
 }
