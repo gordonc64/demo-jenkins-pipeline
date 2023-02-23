@@ -40,12 +40,6 @@ pipeline {
 
       }
     }
-
-    post {
-        always {
-            dependencyCheckPublisher pattern: 'build/reports/dependency-check-report.xml'
-        }
-    }
     
     //stage('Staging') {
     //  steps {
@@ -55,7 +49,14 @@ pipeline {
     //}
 
   }
+  
   //tools {
   //  gradle 'gradle6.5'
   //}
+  
+  post {
+      always {
+          dependencyCheckPublisher pattern: 'build/reports/dependency-check-report.xml'
+      }
+  }
 }
