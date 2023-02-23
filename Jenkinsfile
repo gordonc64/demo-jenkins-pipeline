@@ -41,6 +41,12 @@ pipeline {
       }
     }
 
+    post {
+        always {
+            dependencyCheckPublisher pattern: 'build/reports/dependency-check-report.xml'
+        }
+    }
+    
     //stage('Staging') {
     //  steps {
     //    echo 'Build Docker image'
