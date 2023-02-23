@@ -34,7 +34,7 @@ pipeline {
 
         stage('security checks') {
           steps {
-            sh './gradlew --stacktrace dependencyCheckAnalyze'
+            sh './gradlew --warning-mode all dependencyCheckAnalyze'
           }
         }
 
