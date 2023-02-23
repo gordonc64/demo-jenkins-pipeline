@@ -41,12 +41,12 @@ pipeline {
       }
     }
 
-    stage('Staging') {
-      steps {
-        echo 'Build Docker image'
-        sh './gradlew dockerBuildImage'
-      }
-    }
+    //stage('Staging') {
+    //  steps {
+    //    echo 'Build Docker image'
+    //    sh './gradlew dockerBuildImage'
+    //  }
+    //}
 
   }
   //tools {
