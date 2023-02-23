@@ -34,7 +34,7 @@ pipeline {
 
         stage('security checks') {
           steps {
-            sh './gradlew dependencyCheckAnalyze'
+            sh './gradlew dependencyCheckAnalyze --scan'
           }
         }
 
